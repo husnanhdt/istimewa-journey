@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Destinasi Wisata Yogyakarta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .badge-location {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 10;
+            text-shadow: 0 5px 9px rgba(0, 0, 0, 0.7);
+        }
+
+        .overlay-text h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+        }
+
+        .overlay-text p {
+            font-size: 1.2rem;
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 0;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+
+        .card-title {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="Homepage.html">Istimewa Journey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="Homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kuliner.html">Kuliner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event.html">Budaya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <!-- Carousel Section -->
+        <div id="carouselwisata" class="carousel slide" data-bs-ride="carousel" data-bs-theme="light">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="foto_destinasi/afif-ramdhasuma-esSYEOq4s9U-unsplash (1) copy.jpg" class="d-block w-100" alt="..." style="height: 90vh; object-fit: cover; object-position: center;">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="foto_destinasi/kalibirucarausel (1).jpg" class="d-block w-100" alt="..." style="height: 90vh; object-fit: cover; object-position: center;">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="foto_destinasi/pantai-indrayanti (1).jpg" class="d-block w-100" alt="..." style="height: 90vh; object-fit: cover; object-position: center;">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselwisata" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselwisata" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="overlay-text">
+            <h1 class="display-4 fw-bold">Eksplorasi Destinasi Wisata Jogja</h1>
+            <p class="lead">Dari Pantai, Candi, hingga Pegunungan – semua ada di sini!</p>
+        </div>
+    </main>
+
+    <!-- Destinasi Cards -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Destinasi 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm position-relative h-100">
+                        <span class="badge bg-secondary badge-location">Sleman</span>
+                        <img src="foto_destinasi/afif-ramdhasuma-esSYEOq4s9U-unsplash (1) copy.jpg" class="card-img-top"
+                            alt="Candi Prambanan">
+                        <div class="card-body">
+                            <h5 class="card-title">Candi Prambanan</h5>
+                            <p class="card-text">Kompleks candi Hindu megah dengan kisah Ramayana yang legendaris.</p>
+                            <a href="destinasiprambanan.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm position-relative h-100">
+                        <span class="badge bg-secondary badge-location">Gunungkidul</span>
+                        <img src="foto_destinasi/pantai-indrayanti (1).jpg" class="card-img-top"
+                            alt="Pantai Indrayanti">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantai Indrayanti</h5>
+                            <p class="card-text">Pasir putih bersih, air jernih, dan suasana romantis di pesisir selatan
+                                Jogja.</p>
+                            <a href="pantaiindrayanti.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm position-relative h-100">
+                        <span class="badge bg-secondary badge-location">Kulon Progo</span>
+                        <img src="foto_destinasi/kalibiru (1).jpg" class="card-img-top" alt="Kalibiru">
+                        <div class="card-body">
+                            <h5 class="card-title">Kalibiru</h5>
+                            <p class="card-text">Spot foto di atas bukit dengan pemandangan Waduk Sermo yang
+                                menakjubkan.</p>
+                            <a href="kalibiru.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm position-relative h-100">
+                        <span class="badge bg-secondary badge-location">Kota Yogyakarta</span>
+                        <img src="foto_destinasi/makioboro.jpg" class="card-img-top" alt="Jalan Malioboro">
+                        <div class="card-body">
+                            <h5 class="card-title">Jalan Malioboro</h5>
+                            <p class="card-text">Ikon belanja, budaya, dan wisata malam yang selalu ramai dan meriah.
+                            </p>
+                            <a href="malioboro.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm position-relative h-100">
+                        <span class="badge bg-secondary badge-location">Gunungkidul</span>
+                        <img src="foto_destinasi/goapindull.jpeg" class="card-img-top" alt="Goa Pindul">
+                        <div class="card-body">
+                            <h5 class="card-title">Goa Pindul</h5>
+                            <p class="card-text">Petualangan cave tubing menyusuri sungai bawah tanah di dalam gua
+                                alami.</p>
+                            <a href="goa_pindul.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm position-relative h-100">
+                        <span class="badge bg-secondary badge-location">Kota Yogyakarta</span>
+                        <img src="foto_destinasi/tamansari.jpeg" class="card-img-top" alt="Goa Pindul">
+                        <div class="card-body">
+                            <h5 class="card-title">Taman Sari</h5>
+                            <p class="card-text">Kompleks istana air peninggalan Keraton Yogyakarta dengan arsitektur
+                                khas dan sejarah mendalam.</p>
+                            <a href="tamansari.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2025 Istimewa Journey. Amikom Yogyakarta.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
